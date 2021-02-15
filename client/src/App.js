@@ -15,63 +15,60 @@ import ForgotPassword from "../src/pages/ForgotPassword";
 
 function App() {
      return (
-          <div>
-               <Router>
-                    <MyNavbar />
+          <Router>
+               <MyNavbar />
 
-                    <AuthProvider>
-                         <Switch>
-                              {/* <Route exact path={["/", "/home"]}>
-                                   <Home />
-                              </Route>
-                              <Route exact path="/login">
-                                   <Login />
-                              </Route>
-                              <Route exact path="/create-account">
-                                   <CreateAccount />
-                              </Route>
-                              <Route exact path="/party">
-                                   <Party />
-                              </Route>
-                              <Route exact path="/partycreate">
-                                   <PartyCreate />
-                              </Route>
+               <AuthProvider>
+                    <Switch>
+                         <Route exact path={["/", "/home"]}>
+                              <Home />
+                         </Route>
+                         <Route exact path="/login">
+                              <Login />
+                         </Route>
+                         <Route exact path="/create-account">
+                              <CreateAccount />
+                         </Route>
+                         <Route exact path="/party">
+                              <Party />
+                         </Route>
+                         <Route exact path="/partycreate">
+                              <PartyCreate />
+                         </Route>
 
-                              <Route path="/forgot-password">
-                                   <ForgotPassword />
-                              </Route>
-                              <Route>
-                                   <NoMatch />
-                              </Route> */}
-                              <Route exact path={["/", "/home"]}>
-                                   {Home}
-                              </Route>
-                              <Route exact path="/login" component={Login} />
+                         <Route path="/forgot-password">
+                              <ForgotPassword />
+                         </Route>
+                         <Route>
+                              <NoMatch />
+                         </Route>
+                         {/* <Route exact path={["/", "/home"]}>
+                              <Home />
+                         </Route>
+                         <Route exact path="/login">
+                              component={Login}
+                         </Route>
 
-                              <Route
-                                   exact
-                                   path="/create-account"
-                                   component={CreateAccount}
-                              />
+                         <Route exact path="/create-account">
+                              component={CreateAccount}
+                         </Route>
 
-                              <Route exact path="/party" component={Party} />
+                         <Route exact path="/party">
+                              component={Party}
+                         </Route>
 
-                              <Route
-                                   exact
-                                   path="/partycreate"
-                                   component={PartyCreate}
-                              />
+                         <Route exact path="/partycreate">
+                              component={PartyCreate}
+                         </Route>
 
-                              <Route
-                                   path="/forgot-password"
-                                   component={ForgotPassword}
-                              />
+                         <Route path="/forgot-password">
+                              component={ForgotPassword}
+                         </Route>
 
-                              <Route component={NoMatch} />
-                         </Switch>
-                    </AuthProvider>
-               </Router>
-          </div>
+                         <Route component={NoMatch}></Route> */}
+                    </Switch>
+               </AuthProvider>
+          </Router>
      );
 }
 

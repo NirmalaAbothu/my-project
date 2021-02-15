@@ -1,8 +1,6 @@
-// import React from "react";
 import { Form, Card, Col, Button, Row, Alert } from "react-bootstrap";
 import React, { useRef, useState } from "react";
-// import { Form, Button, Card, Alert } from "react-bootstrap";
-// import { useAuth } from "../components/contexts/AuthContext";
+
 import { useAuth } from "../contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 
